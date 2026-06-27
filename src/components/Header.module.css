@@ -1,10 +1,18 @@
 .topbar      { background: #222; color: #ccc; font-size: 12px; padding: 5px 0; }
-.topbarInner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
-.fecha       { font-size: 12px; }
+.topbarInner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+
+.topLeft  { display: flex; align-items: center; gap: 14px; }
+.fecha    { font-size: 12px; }
+.clima    { font-size: 12px; color: #aaa; border-left: 1px solid #444; padding-left: 14px; }
+
 .topRight    { display: flex; align-items: center; gap: 12px; }
 .adminBadge  { color: var(--orange-lt); font-size: 11px; }
 .topBtn      { background: none; border: 1px solid #555; color: #ccc; font-size: 11px; padding: 3px 10px; border-radius: 3px; cursor: pointer; }
 .topBtn:hover { border-color: #999; color: white; }
+
+.socials     { display: flex; align-items: center; gap: 10px; }
+.socialLink  { color: #aaa; display: flex; align-items: center; transition: color 0.15s; }
+.socialLink:hover { color: white; }
 
 .logoBar      { background: white; border-bottom: 1px solid var(--border); padding: 16px 0; }
 .logoBarInner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
