@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { signIn } from '../lib/supabase'
 import styles from './LoginPage.module.css'
 
 export default function LoginPage() {
+  const navigate   = useNavigate()
   const [email,    setEmail]    = useState('')
   const [password, setPassword] = useState('')
   const [error,    setError]    = useState(null)
@@ -12,9 +13,14 @@ export default function LoginPage() {
   async function handleSubmit(e) {
     e.preventDefault()
     setError(null); setLoading(true)
-    try { await signIn(email, password) }
-    catch { setError('Email o contraseña incorrectos.') }
-    finally { setLoading(false) }
+    try {
+      await signIn(email, password)
+      navigate('/admin', { replace: true })
+    } catch {
+      setError('Email o contraseña incorrectos.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
