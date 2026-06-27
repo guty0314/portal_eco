@@ -1,0 +1,53 @@
+.skeleton { height: 340px; background: var(--border-lt); border-radius: 6px; animation: sh 1.4s ease-in-out infinite alternate; }
+@keyframes sh { from{opacity:.6} to{opacity:1} }
+
+.empty { height: 260px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: var(--text-muted); border: 2px dashed var(--border); border-radius: 6px; font-size: 14px; }
+.empty span { font-size: 40px; opacity: .3; }
+
+.hero { display: grid; grid-template-columns: 1fr 1fr; background: white; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+
+.imgWrap { position: relative; min-height: 320px; }
+.img     { width: 100%; height: 100%; object-fit: cover; display: block; }
+.imgPh   { width: 100%; height: 100%; min-height: 320px; background: linear-gradient(135deg, #c8e6c0, #a5d68a); display: flex; align-items: center; justify-content: center; font-size: 64px; }
+
+.content { padding: 32px 28px; display: flex; flex-direction: column; gap: 14px; justify-content: center; }
+
+.catBadge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
+  border-radius: 3px;
+  width: fit-content;
+}
+
+.title {
+  font-family: var(--heading);
+  font-size: clamp(20px, 2.5vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+  transition: color 0.15s;
+}
+.title:hover { color: var(--green); }
+
+.excerpt {
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+.meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; }
+  .imgWrap { min-height: 200px; }
+}

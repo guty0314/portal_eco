@@ -1,0 +1,77 @@
+.topbar      { background: #222; color: #ccc; font-size: 12px; padding: 5px 0; }
+.topbarInner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+.fecha       { font-size: 12px; }
+.topRight    { display: flex; align-items: center; gap: 12px; }
+.adminBadge  { color: var(--orange-lt); font-size: 11px; }
+.topBtn      { background: none; border: 1px solid #555; color: #ccc; font-size: 11px; padding: 3px 10px; border-radius: 3px; cursor: pointer; }
+.topBtn:hover { border-color: #999; color: white; }
+
+.logoBar      { background: white; border-bottom: 1px solid var(--border); padding: 16px 0; }
+.logoBarInner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.logo         { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.logoIcon  { flex-shrink: 0; height: 60px; border-radius: 6px; overflow: hidden; background: white; }
+.logoImg   { height: 100%; width: auto; object-fit: contain; display: block; }
+.logoText     { font-size: 38px; font-weight: 900; line-height: 1; font-family: var(--heading); }
+.logoEco      { color: var(--orange); }
+.logoJuy      { color: var(--green); }
+.logoSub      { font-size: 12px; color: var(--green); font-weight: 600; margin-top: 2px; letter-spacing: 0.02em; }
+.logoBanner   {
+  background: var(--green-bg);
+  border-left: 3px solid var(--green);
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-mid);
+  border-radius: 0 4px 4px 0;
+}
+
+.nav      { background: var(--green); position: sticky; top: 0; z-index: 100; }
+.navInner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; gap: 0; }
+.navLink  {
+  display: block;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.88);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 3px solid transparent;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.navLink:hover { background: rgba(0,0,0,0.15); color: white; }
+.navActive     { background: rgba(0,0,0,0.2); color: white; border-bottom-color: var(--orange-lt); }
+
+.tipsBtn {
+  margin-left: auto;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+.tipsBtn:hover { background: rgba(255,255,255,0.25); }
+
+.publishBtn {
+  background: var(--orange);
+  color: white;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+.publishBtn:hover { background: var(--earth); }
+
+@media (max-width: 768px) {
+  .logoBanner { display: none; }
+  .navLink    { padding: 10px 10px; font-size: 11px; }
+}

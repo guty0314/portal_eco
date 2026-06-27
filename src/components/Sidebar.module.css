@@ -1,0 +1,65 @@
+.aside { display: flex; flex-direction: column; gap: 20px; }
+
+.widget { background: white; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+
+.widgetHead {
+  background: var(--green);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.leaf { font-size: 16px; }
+
+.tipCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-lt);
+}
+.tipCard:last-of-type { border-bottom: none; }
+.tipIcon { font-size: 28px; flex-shrink: 0; }
+.tipCard strong { font-size: 13px; color: var(--text); display: block; margin-bottom: 3px; }
+.tipCard p { font-size: 12px; color: var(--text-soft); line-height: 1.5; }
+
+.tipBtn {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 0 16px 14px;
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tipBtn:hover { background: var(--green-dk); }
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-lt);
+  transition: opacity 0.15s;
+  text-decoration: none;
+}
+.social:last-child { border-bottom: none; }
+.social:hover { opacity: 0.85; }
+.social strong { font-size: 13px; color: white; display: block; }
+.social span:not(.socialIcon) { font-size: 11px; color: rgba(255,255,255,0.8); }
+
+.socialIcon { font-size: 22px; flex-shrink: 0; }
+
+.ig { background: linear-gradient(135deg, #e1306c, #833ab4); color: white; }
+.fb { background: #1877f2; color: white; }
+.wa { background: #25d366; color: white; }

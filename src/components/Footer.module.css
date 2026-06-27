@@ -1,0 +1,2 @@
+.footer { background: var(--green-dk); color: rgba(255,255,255,0.75); padding: 20px 0; margin-top: 48px; font-size: 13px; text-align: center; }
+.inner  { max-width: 1200px; margin: 0 auto; padding: 0 20px; }

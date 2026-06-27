@@ -1,0 +1,61 @@
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #1e3a10;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 18px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.logoImg  { width: 100%; max-width: 180px; height: auto; object-fit: contain; display: block; border-radius: 6px; background: white; }
+.brandSub { font-size: 9px; color: rgba(255,255,255,0.45); letter-spacing: 0.12em; text-align: center; }
+
+.nav { padding: 18px 0; flex: 1; }
+.navLabel { font-size: 10px; color: rgba(255,255,255,0.35); letter-spacing: 0.12em; padding: 0 18px 10px; }
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 18px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  font-family: var(--body);
+  transition: background 0.15s, color 0.15s;
+}
+.navItem:hover { background: rgba(255,255,255,0.07); color: white; }
+.navActive { background: rgba(255,255,255,0.1); color: white; border-left-color: var(--orange); }
+
+.footer {
+  padding: 16px 18px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.userEmail { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 10px; word-break: break-all; }
+.signOut {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.65);
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--body);
+  transition: border-color 0.15s, color 0.15s;
+}
+.signOut:hover { border-color: rgba(255,255,255,0.55); color: white; }
